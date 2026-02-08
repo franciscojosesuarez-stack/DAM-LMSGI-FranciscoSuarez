@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" ?>
+<!DOCTYPE cifp SYSTEM "cifp.dtd">
+
+<cifp>
+<alumne id="1">
+<nom>Joan</nom>
+<llinatges>Suarez, Fiol</llinatges>
+    <data_matricula>15-09-2023</data_matricula>
+    <curs nom="DAM"></curs>
+</alumne>
+<alumne id="2">
+    <nom>Daniela</nom>
+    <llinatges>Coll, Pons</llinatges>   
+    <data_naixement>10-07-1995</data_naixement>
+    <correu>daniela.coll@paucasesnovescifp.cat</correu>
+    <telefon>971971971</telefon>
+    <adreça>Carrer Sense Nom, 123</adreça>
+    <data_matricula>15-09-2024</data_matricula>
+    <curs nom="DAW"></curs>
+</alumne>
+<professor id="1">
+    <nom>Pere</nom>
+    <llinatges>Garcia, Martinez</llinatges>
+    <data_naixement>01-01-1980</data_naixement>
+    <correu>pere.garcia@paucasesnovescifp.cat</correu>
+    <telefon>971971972</telefon>
+    <adreça>Carrer Biniali, 456</adreça>
+    <data_incorporació>15-09-2020</data_incorporació>
+    <departament nom="Informàtica"></departament>
+    <assignatura id_assignatura="1">
+        <nom_assignatura cicle="DAM">Bases de dades</nom_assignatura>
+        <data_inici>15-09-2023</data_inici>
+        <data_final>15-06-2024</data_final>
+    </assignatura>
+</professor>
+<professor id="2">
+<nom>Maria</nom>
+<llinatges>Lopez, Alguersuari</llinatges>
+    <data_incorporació>01-02-2021</data_incorporació>
+    <departament nom="Informàtica"></departament>
+    <assignatura id_assignatura="2">
+        <nom_assignatura cicle="DAW">Programació</nom_assignatura>
+        <data_inici>01-02-2021</data_inici>
+    </assignatura>
+</professor>
+</cifp>

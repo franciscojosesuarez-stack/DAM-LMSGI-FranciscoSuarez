@@ -1,0 +1,30 @@
+<!ELEMENT cifp (alumne*, professor*)>
+<!ENTITY % atributosComunes "id NMTOKEN #REQUIRED">
+<!ENTITY % elementosComunes "nom, llinatges, data_naixement?, correu?, telefon?, adreça?">
+<!ENTITY % listaCursos "(DAM | DAW | ASIX | SMX | SEIA | ER | AUT)">
+
+<!ELEMENT alumne (%elementosComunes;, data_matricula, curs)>
+<!ATTLIST alumne %atributosComunes;>
+<!ELEMENT professor (%elementosComunes;, data_incorporació, departament, assignatura*)>
+<!ATTLIST professor %atributosComunes;>
+
+<!ELEMENT nom (#PCDATA) >
+<!ELEMENT llinatges (#PCDATA) >
+<!ELEMENT data_naixement (#PCDATA) >
+<!ELEMENT correu (#PCDATA) >
+<!ELEMENT telefon (#PCDATA) >
+<!ELEMENT adreça (#PCDATA) >
+
+<!ELEMENT data_matricula (#PCDATA) >
+<!ELEMENT curs EMPTY>
+<!ATTLIST curs nom %listaCursos; #REQUIRED>
+
+<!ELEMENT data_incorporació (#PCDATA) >
+<!ELEMENT departament EMPTY>
+<!ATTLIST departament nom (Informàtica | Electricitat | Automoció) #REQUIRED>
+<!ELEMENT assignatura (nom_assignatura, data_inici?, data_final?)>
+<!ATTLIST assignatura id_assignatura NMTOKEN #REQUIRED>
+<!ELEMENT nom_assignatura (#PCDATA) >
+<!ATTLIST nom_assignatura cicle %listaCursos; #REQUIRED>
+<!ELEMENT data_inici (#PCDATA) >
+<!ELEMENT data_final (#PCDATA) >
