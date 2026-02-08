@@ -8,8 +8,7 @@
         <email>franciscojosesuarez@paucasesnovescifp.cat</email>
         <uri>https://www.motornews.com/</uri>
     </author>
-    <link rel="self" href="https://raw.githubusercontent.com/franciscojosesuarez-stack/DAM-LMSGI-FranciscoSuarez/refs/heads/main/LMSGI04.1/atom.xml" />
-    <category term="automobilisme" />
+    <link rel="self" type="application/atom+xml" href="https://raw.githubusercontent.com/franciscojosesuarez-stack/DAM-LMSGI-FranciscoSuarez/main/LMSGI04.1/atom.xml" />    <category term="automobilisme" />
     <subtitle>ÚLTIMES NOTÍCIES SOBRE EL MÓN DEL MOTOR</subtitle>
     <entry>
     <title>Ferrari presenta el seu nou model híbrid, el SF-2024</title>
@@ -35,3 +34,4 @@
     </entry>
 
 </feed>
+
